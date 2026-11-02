@@ -87,7 +87,7 @@ export default async function FeaturedServicePage({ params }) {
                       <p className="!text-xs !font-semibold !uppercase !tracking-[0.18em] !text-blue-200">
                         Built around you
                       </p>
-                      <p className="!mt-2 !text-xl !font-semibold">Electrical work, made clear.</p>
+                      <p className="!mt-2 !text-xl !font-semibold">Electrical work, made cleared.</p>
                     </div>
                     <span className="!flex !size-14 !items-center !justify-center !rounded-2xl !bg-white/10 !text-blue-200">
                       <Zap className="!size-7" />
