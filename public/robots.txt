@@ -1,0 +1,38 @@
+User-agent: *
+
+# Allow all public pages
+
+Allow: /
+ 
+# Block only private/internal routes
+
+Disallow: /api/
+
+Disallow: /draft/
+
+Disallow: /test/
+
+Disallow: /staging/
+
+Disallow: /admin/
+
+Disallow: /dashboard/
+ 
+Disallow: /*?s=
+
+Disallow: /*?search=
+
+Disallow: /*?filter=
+
+Disallow: /*?sort=
+ 
+Disallow: /*?utm_source=
+
+Disallow: /*?utm_medium=
+
+Disallow: /*?utm_campaign=
+ 
+# Sitemap
+
+Sitemap: https://pecelectricalct.com/sitemap.xml
+ 
