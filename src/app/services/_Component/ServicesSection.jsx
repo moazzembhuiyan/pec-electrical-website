@@ -8,37 +8,37 @@ const services = [
   {
     icon: <Plug size={32} className="!text-[#4169E1]" />,
     title: 'Panel Upgrades',
-    urlHandler: 'panel-upgrades',
+    urlHandler: 'electrical-panel-upgrades',
     description: 'Improve safety and keep up with today’s power needs.',
   },
   {
     icon: <Lightbulb size={32} className="!text-[#4169E1]" />,
     title: 'Lighting Installation',
-    urlHandler: 'lighting-installation',
+    urlHandler: 'lighting-installation-and-upgrades',
     description: 'Indoor and outdoor lighting for greater comfort, safety and efficiency.',
   },
   {
     icon: <Home size={32} className="!text-[#4169E1]" />,
     title: 'Renovation Wiring',
-    urlHandler: 'renovation-wiring',
+    urlHandler: 'electrical-projects-and-renovations',
     description: 'Electrical systems for kitchens, bathrooms, additions and more.',
   },
   {
     icon: <Fan size={32} className="!text-[#4169E1]" />,
     title: 'Other Wiring',
-    urlHandler: 'other-wiring',
+    urlHandler: 'heating-and-cooling-system-wiring',
     description: 'Dedicated circuits and wiring for HVAC systems.',
   },
   {
     icon: <Zap size={32} className="!text-[#4169E1]" />,
     title: 'Generator Connections',
-    urlHandler: 'generator-connections',
+    urlHandler: 'backup-generator-electrical-work',
     description: 'Keep your home or business powered when it matters most.',
   },
   {
     icon: <Wrench size={32} className="!text-[#4169E1]" />,
     title: 'Troubleshooting',
-    urlHandler: 'troubleshooting',
+    urlHandler: 'urgent-electrical-troubleshooting',
     description: 'Find and fix electrical issues quickly and safely.',
   },
   {
@@ -72,7 +72,7 @@ export default function ServicesSection() {
           <div className="!grid !grid-cols-1 sm:!grid-cols-2 lg:!grid-cols-4 !gap-6">
             {services.map((service) => (
               <Link
-                href={`/services/featured/${service.urlHandler}`}
+                href={`/services/${service.urlHandler}`}
                 key={service.urlHandler}
                 aria-label={`View ${service.title} details`}
                 className="!bg-white !border !border-gray-100 !rounded-xl !p-6 !text-center !shadow-sm hover:!shadow-lg hover:!scale-105 !transition-all !duration-300 !ease-in-out !cursor-pointer focus-visible:!outline-none focus-visible:!ring-2 focus-visible:!ring-[#4169E1]"
