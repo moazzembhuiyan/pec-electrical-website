@@ -8,6 +8,8 @@ import Link from 'next/link';
 
 const ServiceDetailsContainer = ({ initialService, id, error }) => {
   const service = initialService?.data;
+  const bookingServiceId = id || service?.type || '';
+  const bookingHref = `/book-service?service=${encodeURIComponent(bookingServiceId)}&serviceName=${encodeURIComponent(service?.type || '')}`;
 
   return (
     <div className="!bg-white">
@@ -31,16 +33,16 @@ const ServiceDetailsContainer = ({ initialService, id, error }) => {
                 {service?.description}
               </p>
 
-              {/* <Link
-                href="/book-service"
-                className="!group !mt-8 !inline-flex !items-center !gap-3 !rounded-full !bg-[#4169E1] !py-2 !pl-6 !pr-2 !text-base !font-semibold !text-white !shadow-lg !shadow-[#4169E1]/30 !transition-all !duration-300 hover:!-translate-y-0.5 hover:!bg-[#2E4B9B] hover:!shadow-xl"
+              <Link
+                href={bookingHref}
+                className="group !mt-8 !inline-flex !items-center !gap-3 !rounded-full !bg-[#4169E1] !py-2 !pl-6 !pr-2 !text-base !font-semibold !text-white !shadow-lg !shadow-[#4169E1]/30 !transition-all !duration-300 hover:!-translate-y-0.5 hover:!bg-[#0F172A] hover:!shadow-xl"
                 id="request-quote-btn"
               >
                 Book Now
                 <span className="!flex !h-9 !w-9 !items-center !justify-center !rounded-full !bg-white !text-[#4169E1] !transition-transform !duration-300 group-hover:!rotate-45">
                   <ArrowRight size={18} className="!-rotate-45" />
                 </span>
-              </Link> */}
+              </Link>
             </div>
 
             {/* featured services */}
