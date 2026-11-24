@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:38BDF8&height=180&section=header&text=PEC%20Electrical&fontSize=40&fontColor=ffffff&fontAlignY=36&desc=Professional%20electrical%20services&descAlignY=58&descSize=16" alt="PEC Electrical" />
+<img src=".github/banner.svg" width="100%" alt="PEC Electrical — Professional electrical services" />
 
 <p><b>🌐 Business Website</b></p>
 
